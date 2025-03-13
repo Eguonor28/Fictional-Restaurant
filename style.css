@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sanchez:ital@0;1&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sanchez:ital@0;1&family=Truculenta:opsz,wght@12..72,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+}
+.header {
+  display: flex;
+}
+body {
+  background-color: antiquewhite;
+}
+.masco_logo {
+  width: 80px;
+}
+.masco_logo_container {
+  display: flex;
+  align-items: center;
+}
+.masco_logo_container p {
+  font-family: "Truculenta", sans-serif;
+  font-size: 50px;
+}
+.nav_menu1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 50px;
+}
+.nav_items {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  font-weight: 200px;
+  font-size: 17px;
+  color: black;
+}
+.connect_wallet_btn {
+  padding: 15px 30px;
+  background-color: rgb(64, 64, 169);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+}
+.connect_wallet_btn:hover {
+  padding: 18px 33px;
+  transition: 0.3s;
+}
+.primary_btn {
+  padding: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.primary_btn:hover {
+  margin: 5px;
+  transition: 0.3s;
+}
+.main {
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+.main_primary_btn {
+  background-color: black;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.main_primary_btn:hover {
+  padding: 18px 43px;
+  transition: 0.3s;
+}
+.main h1 {
+  padding: 50px;
+  font-size: 70px;
+  color: white;
+}
+.main > p {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.main_secondary_btn {
+  background-color: black;
+  color: white;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 30px;
+}
+.main_secondary_btn:hover {
+  padding: 18px 43px;
+  transition: 0.3s;
+}
+.products {
+  border: none;
+  font-size: 18px;
+  background: none;
+}
+.hero {
+  background-image: url(/10-restaurant-menu-ideas-to-attract-more-customers.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.main_products {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.image_container img {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.product_name {
+  font-weight: 800;
+}
+.product_description {
+  padding: 5px 5px 0px 5px;
+}
+.shop_now {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(167, 20, 20);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 50%;
+  box-shadow: 0 4px 8px rgb(134, 131, 131);
+}
+.shop_now:hover {
+  padding: 10px;
+  background-color: rgb(194, 25, 25);
+  transition: 0.3s;
+}
+.image_container {
+  box-shadow: 0 4px 8px rgb(134, 131, 131);
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.image_container:hover {
+  margin: 5px;
+  transition: 0.3s;
+}
+.price_discount {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-top: 5px;
+  padding: 0 10px;
+}
+.price {
+  color: rgb(156, 164, 172);
+}
+.discount {
+  color: rgb(5, 206, 49);
+}
+.footer {
+  background-color: grey;
+  padding: 20px;
+}
+.contact_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+li {
+  list-style: none;
+}
+li > a:hover {
+  color: rgb(104, 112, 112);
+  transform: 0.3s;
+}
+h2 {
+  font-size: 15px;
+}
+.footer_ul a {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_items {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    .connect_wallet_btn {
+      padding: 10px 20px;
+      font-size: 15px;
+      border: none;
+      border-radius: 20px;
+    }
+    .main_products {
+      padding: 20px 20px;
+    }
+    .masco_logo {
+      width: 60px;
+    }
+    .masco_logo_container p {
+      font-size: 30px;
+    }
+    .nav_menu1 {
+      padding: 5px 5px;
+      justify-content: space-between;
+    }
+    .main h1 {
+      padding: 30px;
+      font-size: 40px;
+    }
+    .primary_btn {
+      display: none;
+    }
+    .main_products {
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .shop_now {
+      margin-top: 10px;
+    }
+  }
+}
